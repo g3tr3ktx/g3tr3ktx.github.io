@@ -44,6 +44,11 @@ button:hover {
     background-color: transparent;
 }
 
+.section-light {
+    background-color: #f4f4f4;
+    color: #666;
+}
+
 .pimg1,
 .pimg2,
 .pimg3 {
