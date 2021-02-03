@@ -7,6 +7,7 @@ html {
     font-weight: 400;
     line-height: 1.8em;
     color: #666;
+    background-color: #758996
 }
 
 p {
@@ -53,7 +54,7 @@ button:hover {
 .pimg2,
 .pimg3 {
     position: relative;
-    opacity: 0.70;
+    /* opacity: 0.70; */
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -68,4 +69,12 @@ button:hover {
 .section {
     text-align: center;
     padding: 50px 80px;
+}
+
+@media(max-width:568px) {
+    .pimg1,
+    .pimg2,
+    .pimg3 {
+        background-attachment: scroll;
+    }
 }
