@@ -50,7 +50,7 @@ button:hover {
     position: relative;
     opacity: 0.70;
     background-position: center;
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
