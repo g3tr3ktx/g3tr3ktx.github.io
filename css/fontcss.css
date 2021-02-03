@@ -1,9 +1,13 @@
-
 @font-face {
     font-family: 'apercuregular';
-    src: url('apercu_regular-webfont.woff2') format('woff2'),
-         url('apercu_regular-webfont.woff') format('woff');
+    src: url('../resources/fonts/apercu_regular-webfont.woff2') format('woff2'), url('../resources/fonts/apercu_regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+}
 
+@font-face {
+    font-family: 'europaregular';
+    src: url('../resources/fonts/Europa/europa_regular-webfont.woff2') format('woff2'), url('../resources/fonts/Europa/europa_regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
