@@ -19,6 +19,7 @@ html {
 
 .mText {
     width: 200px;
+    display: block;
     /* margin-top: 100px; */
     background-color: #181818;
     border: 1px solid #656565;
