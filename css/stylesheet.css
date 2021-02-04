@@ -11,7 +11,6 @@ html {
 
 .header {
     display: block;
-    color: red;
     margin-top: 1000px;
     align-items: center;
     text-align: center;
@@ -36,7 +35,7 @@ p {
 }
 
 .hText {
-    color: #B3A577;
+    color: #cc0e74;
 }
 
 h2 {
@@ -44,7 +43,7 @@ h2 {
 }
 
 .active {
-    color: #B3A577;
+    color: #cc0e74;
 }
 
 li {
@@ -71,6 +70,7 @@ a {
     margin: 200px 100px;
     font-size: 50px;
     line-height: normal;
+    padding-bottom: 200px;
 }
 
 @media(max-width:568px) {}
