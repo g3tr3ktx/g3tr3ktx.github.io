@@ -1,0 +1,56 @@
+/* layout */
+
+.base-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+}
+
+
+/* Parallax Styles */
+
+.parallax-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    perspective: 8px;
+    perspective-origin: 0%;
+}
+
+
+/* img {
+    position: absolute;
+    transform-origin: 0 50%;
+    width: 420px;
+    height: 420px;
+} */
+
+.background__image {
+    position: absolute;
+    transform-origin: 0 50%;
+    width: 420px;
+    height: 420px;
+    transform: translateZ(0px) scale(1);
+    height: 840px;
+}
+
+.middle__image {
+    position: absolute;
+    transform-origin: 0 50%;
+    width: 420px;
+    height: 420px;
+    top: 150px;
+    transform: translateZ(5px) scale(0.375);
+}
+
+.foreground__image {
+    position: absolute;
+    transform-origin: 0 50%;
+    width: 420px;
+    height: 420px;
+    top: 125px;
+    transform: translateZ(2px) scale(0.75);
+}
