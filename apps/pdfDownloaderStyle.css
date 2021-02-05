@@ -1,0 +1,50 @@
+body {
+    font-family: 'Open Sans';
+    background-color: lightblue;
+}
+
+h1 {
+    font-style: 'apercuregular';
+    color: grey;
+    text-align: center;
+}
+
+.header {
+    background-color: black;
+    padding: 20px;
+    text-align: center;
+    margin: 20px;
+}
+
+img,
+button,
+input,
+a {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 8;
+    text-align: center;
+}
+
+button {
+    height: 35;
+    width: 170;
+    color: black;
+    font-family: 'Open Sans';
+    background-color: black54;
+    border-radius: 25px;
+    border: none;
+}
+
+input {
+    background-color: lightblue;
+    outline: 0;
+    border-width: 0 0 2px;
+    border-color: black
+}
+
+#downloadLink {
+    color: white;
+    display: none;
+}

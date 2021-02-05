@@ -1,102 +1,26 @@
-<html lang="en"> 
-    <head> 
-        <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
-        <style type="text/css">
-            body {
-                font-family: 'Open Sans';
-  background-color: lightblue;
-}
-h1 {
-  color: grey;
-  text-align: center;
-}
-.header {
-  background-color: black;
-  padding: 20px;
-  text-align: center;
-  margin: 20px;
-}
-img,button,input,a {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 8;
-  text-align: center;
-}
-button{
-    height: 35;
-    width: 170;
-    color: black;
-    font-family: 'Open Sans';
-    background-color: black54;
-    border-radius: 25px;
-}
-input{
-    background-color: lightblue;
-     outline: 0;
-  border-width: 0 0 2px;
-  border-color: black
-}
-#downloadLink{
-    color: white;
-    display: none;
-}
+<html lang="en">
 
-        </style>
-        <title>Document</title> 
-    </head> 
-    <body> 
-        <div class="header">
-  <h1>Book Downloader By Samar Sheikh</h1>
-</div>
-        <img src="https://elyssarpress.com/wp-content/uploads/2019/12/book-cover-placeholder.png" id="bookCover" width="30%"><br>
-        <input type="text" id="bookName">
-        <button onClick="printName();" type="button" name="bookNameName">Fetch Book Data</button>
-        <a href="" id="downloadLink">Download Link</a>
-        <div >
-        <script>
-            
+<head>
+    <script></script>
+    <link rel="stylesheet" href="../css/fontcss.css" type="text/css" charset="utf-8" />
+    <link rel="stylesheet" href="../apps/pdfDownloaderStyle.css" type="text/css" charset="utf-8" />
+    <style type="text/css">
 
+    </style>
+    <title>Document</title>
+</head>
 
-var imageLink;
-var PDFDownloadLink;
+<body>
+    <div class="header">
+        <h1>Book Downloader By Samar Sheikh</h1>
+    </div>
+    <img src="https://elyssarpress.com/wp-content/uploads/2019/12/book-cover-placeholder.png" id="bookCover" width="30%"><br>
+    <input type="text" id="bookName">
+    <button onClick="printName();" type="button" name="bookNameName">Fetch Book Data</button>
+    <a href="" id="downloadLink">Download Link</a>
+    <div>
+        <script src="../apps/downloaderScript.js">
+        </script>
+</body>
 
-  
-// Defining async function 
-async function getapi(bookName) {
-    downloadLink.style.display = "none";
-    // Storing response 
-    const response = await fetch("https://www.googleapis.com/books/v1/volumes?q="+bookName);
-    const myPDF = await fetch("https://sheltered-lake-50186.herokuapp.com/"+bookName);
-    console.log(myPDF);
-    var PDFData = await myPDF.json();
-    
-    // Storing data in form of JSON 
-    var data = await response.json();
-    // console.log(data); 
-    if (response) { 
-      imageLink = data["items"][0]["volumeInfo"]["imageLinks"]["thumbnail"];
-      PDFDownloadLink = PDFData["data"][0];
-      console.log(PDFDownloadLink);
-    } 
-    downloadLink.style.display = "block";
-    // show(data); 
-} 
-// Calling that async function 
-// getapi(api_url); 
-
-
-async function printName() {
-  console.log(bookNameInput.value);
-  await getapi(bookNameInput.value); 
-  bookCoverImage.src = imageLink;
-  downloadLink.href = PDFDownloadLink;
-}
-
-var bookNameInput = document.getElementById("bookName");
-var bookCoverImage = document.getElementById("bookCover");
-var downloadLink = document.getElementById("downloadLink");
-
-        </script> 
-    </body> 
-</html> 
+</html>
