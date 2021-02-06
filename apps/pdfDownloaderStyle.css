@@ -1,16 +1,15 @@
 body {
-    font-family: 'Open Sans';
-    background-color: lightblue;
+    font-family: 'apercuregular';
+    color: #666;
+    background: #181818;
 }
 
 h1 {
     font-style: 'apercuregular';
-    color: grey;
     text-align: center;
 }
 
 .header {
-    background-color: black;
     padding: 20px;
     text-align: center;
     margin: 20px;
@@ -31,17 +30,18 @@ button {
     height: 35;
     width: 170;
     color: black;
-    font-family: 'Open Sans';
+    font-family: inherit;
     background-color: black54;
     border-radius: 25px;
     border: none;
 }
 
 input {
-    background-color: lightblue;
     outline: 0;
     border-width: 0 0 2px;
-    border-color: black
+    color: white;
+    border-color: #666;
+    background-color: #181818
 }
 
 #downloadLink {
