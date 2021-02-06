@@ -17,12 +17,12 @@ async function getapi(bookName) {
     if (response) {
         imageLink = data["items"][0]["volumeInfo"]["imageLinks"]["thumbnail"];
         PDFDownloadLink = PDFData["data"][0];
+        var testPdfLinks;
         for (i = 0; i < PDFData["data"].length; i++) {
-            testDownloadLinks.innerHTML += "< h >" +
-                PDFData["data"][i] +
-                "</h>";
+            testPdfLinks += "<a>Hey</a>";
 
         }
+        testDownloadLinks.innerHTML = testPdfLinks;
         console.log(PDFDownloadLink);
     }
     downloadLink.style.display = "block";
