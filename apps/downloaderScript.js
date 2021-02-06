@@ -17,6 +17,12 @@ async function getapi(bookName) {
     if (response) {
         imageLink = data["items"][0]["volumeInfo"]["imageLinks"]["thumbnail"];
         PDFDownloadLink = PDFData["data"][0];
+        for (i = 0; i < PDFData["data"].length; i++) {
+            testDownloadLinks.innerHTML += "< h >" +
+                PDFData["data"][i] +
+                "</h>";
+
+        }
         console.log(PDFDownloadLink);
     }
     downloadLink.style.display = "block";
@@ -36,3 +42,4 @@ async function printName() {
 var bookNameInput = document.getElementById("bookName");
 var bookCoverImage = document.getElementById("bookCover");
 var downloadLink = document.getElementById("downloadLink");
+var testDownloadLinks = document.getElementById("testDownloadLinks");
