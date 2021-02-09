@@ -44,7 +44,7 @@ input {
     background-color: #181818
 }
 
-#downloadLink {
+a {
     color: white;
-    display: none;
+    text-decoration: none;
 }
